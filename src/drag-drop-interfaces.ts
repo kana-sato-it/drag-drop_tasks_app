@@ -1,4 +1,4 @@
-namespace DDInterfaces {
+namespace App {
   // Drag & Drop
   export interface Draggable {
     dragStartHandler(event: DragEvent): void;
