@@ -1,11 +1,11 @@
 namespace App {
   //Project Type
-  enum ProjectStatus {
+  export enum ProjectStatus {
     Active,
     Finished,
   }
 
-  class Project {
+  export class Project {
     constructor(
       public id: string,
       public title: string,
