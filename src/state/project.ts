@@ -1,6 +1,5 @@
 import { Project, ProjectStatus } from "../models/project";
 
-//Project State Management
 type Listener<T> = (items: T[]) => void;
 
 class State<T> {

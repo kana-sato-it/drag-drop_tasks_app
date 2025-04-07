@@ -1,4 +1,3 @@
-// Component Class
 export const something = "...";
 
 export default abstract class Component<

@@ -3,7 +3,6 @@ import Component from "./base-component";
 import { Project } from "../models/project";
 import { autobind } from "../decorators/autobind";
 
-// ProjectItem Class
 export class ProjectItem
   extends Component<HTMLUListElement, HTMLLIElement>
   implements Draggable
