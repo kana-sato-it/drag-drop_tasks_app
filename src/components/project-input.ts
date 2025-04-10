@@ -3,13 +3,11 @@ import * as Validation from "../utils/validation";
 import { autobind as Autobind } from "../decorators/autobind";
 import { projectState } from "../state/project";
 
-// ProjectInput Class
 export class ProjectInput extends Cmp<HTMLDivElement, HTMLFormElement> {
   titleInputElement: HTMLInputElement;
   descriptionInputElement: HTMLInputElement;
   mandayInputElement: HTMLInputElement;
 
-  //要素への参照
   constructor() {
     super("project-input", "app", true, "user-input");
     this.titleInputElement = this.element.querySelector(
@@ -24,7 +22,6 @@ export class ProjectInput extends Cmp<HTMLDivElement, HTMLFormElement> {
     this.configure();
   }
 
-  //イベントの設定
   configure() {
     this.element.addEventListener("submit", this.submitHandler);
   }
@@ -70,7 +67,6 @@ export class ProjectInput extends Cmp<HTMLDivElement, HTMLFormElement> {
     this.mandayInputElement.value = "";
   }
 
-  // イベントハンドラ
   @Autobind
   private submitHandler(event: Event) {
     event.preventDefault();
