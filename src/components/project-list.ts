@@ -5,7 +5,6 @@ import { DragTarget } from "../models/drag-drop";
 import { autobind } from "../decorators/autobind";
 import { projectState } from "../state/project";
 
-// ProjectList Class
 export class ProjectList
   extends Component<HTMLDivElement, HTMLElement>
   implements DragTarget
