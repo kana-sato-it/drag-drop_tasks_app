@@ -20,7 +20,6 @@ export class ProjectItem
   constructor(hostId: string, project: Project) {
     super("single-project", hostId, false, project.id);
     this.project = project;
-    // this.element.draggable = true;
     this.configure();
     this.renderContent();
   }
